@@ -45,7 +45,7 @@ window.onload = function () {
                     "targets": 1,
                     "data": 'author.login',
                     "render": function (data, type, full, meta) {
-                        return "<a href='" + full.author.url + "'>" + data + "</a>"
+                        return "<a href='" + full.author.html_url + "'>" + data + "</a>"
                     }
                 }
             ]
