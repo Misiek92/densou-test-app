@@ -33,7 +33,7 @@ class SearchController extends Controller
             $recentSearch->save();
             return response()->json(['status' => 'ok']);
         } catch (\Exception $ex) {
-            return response()->json(['status' => 'error', 'message' => 'Error during save recent search value'], 500);
+            return response()->json(['status' => 'error', 'message' => 'Error during save recent search value: '.$ex->getMessage()], 500);
         }
     }
 
